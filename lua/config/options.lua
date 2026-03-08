@@ -7,5 +7,5 @@ vim.opt.termguicolors = true
 vim.opt.laststatus = 3
 
 vim.g.dbs = {
-  kater_local = "postgresql://localhost/client_portal?user=postgres&password=postgres&sslmode=disable&connect_timeout=10",
+  kater_local = os.getenv("KATER_LOCAL_DB_URL"),
 }
